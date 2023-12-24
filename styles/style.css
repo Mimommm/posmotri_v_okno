@@ -133,7 +133,7 @@ button {
 
 .search-form__checkbox[type='checkbox']:checked + .search-form__pseudo-checkbox::after {
   content: "";
-  position: absolute;
+  position: relative;
   inline-size: 15px;
   block-size: 15px;
   background-color: #fff;

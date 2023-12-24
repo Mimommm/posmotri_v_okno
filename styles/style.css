@@ -73,6 +73,7 @@ button {
 }
 
 .result__video-container {
+  position: relative;
   max-block-size: 386px;
   block-size: 100%;
   inline-size: 100%;
@@ -232,6 +233,7 @@ button {
 }
 
 .content__list {
+  position: relative;
   max-inline-size: 399px;
   inline-size: 100%;
   max-block-size: 298px;

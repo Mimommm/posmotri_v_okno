@@ -75,13 +75,14 @@ button {
   max-block-size: 386px;
   block-size: 100%;
   inline-size: 100%;
-  margin-block-end: 10px;
   z-index: 1;
 }
 
 .result__video {
+  width: 711px;
+  height: 386px;
   inline-size: 100%;
-  block-size: 100%;
+  /* block-size: 100%; */
   object-fit: fill;
 }
 
@@ -89,9 +90,13 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  margin-block-start: 16px;
 }
 
 .search-form__fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   max-inline-size: 225px;
   block-size: 100%;
   appearance: none;
@@ -100,7 +105,9 @@ button {
 .search-form__fieldset-title {
   font-size: 18px;
   font-weight: 400;
+  margin-block-end: 5px;
 }
+
 
 .search-form__checkbox-list {
   display: flex;
@@ -120,6 +127,10 @@ button {
   outline: none;
 }
 
+/* .search-form__label:hover {
+  text-decoration: underline;
+} */
+
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
 }
@@ -138,21 +149,20 @@ button {
   left: 1px;
 }
 
-.search-form__label-text:hover {
-  text-decoration: underline;
-}
-
 .search-form__textfield {
   inline-size: 225px;
   color: rgba(255, 255, 255, 0.70);
   background-color: transparent;
   font-family: inherit;
   font-size: inherit;
-  margin-block-start: 2.5px;
   border: none;
   border-block-start: 1px solid #fff;
   border-block-end: 1px solid #fff;
   appearance: none;
+}
+
+.search-form__textfield:hover {
+  text-decoration: none;
 }
 
 .search-form__textfield:focus {
@@ -160,8 +170,8 @@ button {
 } 
 
 .search-form__textfield:active {
-  border: 3px solid #ffffff;
-}
+  outline-offset: 1px;
+} 
 
 .search-form__textfield:has(:focus-visible) {
   outline: 1px solid;
@@ -176,8 +186,8 @@ button {
   position: relative;
 }
 
-.search-form__pseudo-checkbox:hover {
-  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.5);
+.search-form__label-text:hover {
+  text-decoration: underline;
 }
 
 .button {
@@ -203,13 +213,12 @@ button {
 }
 
 .button:hover {
-  border: 3px solid #fff;
+  text-decoration: underline;
 }
 
 .search-form__submit-button {
   padding-inline-end: 73.5px;
   padding-inline-start: 73.5px;
-  margin-block-start: 24px;
 }
 
 .more-button {
@@ -243,6 +252,7 @@ button {
   max-inline-size: 399px;
   inline-size: 100%;
   max-block-size: 298px;
+  min-block-size: 298px;
   block-size: 100%;
   overflow: auto;
   z-index: 1;
@@ -302,10 +312,11 @@ button {
   line-height: 16.2px;
  }
 
- .content__video-card-description-container:hover {
+ .content__video-card:hover {
   text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
-.content__card-link:hover {
-  border: 1px solid #fff;;
+.content__card-link:focus {
+  border: 0 solid #fff;;
 }

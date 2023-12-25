@@ -1,2 +1,1 @@
-git@github.com:Mimommm/posmotri_v_okno..git
-Поменял комментарий к коммиту.
+https://github.com/Mimommm/posmotri_v_okno.git

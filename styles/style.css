@@ -57,7 +57,6 @@ button {
 
 .content {
   max-inline-size: 1200px;
-  min-block-size: 534px;
   width: 100%;
   display: flex;
   justify-content: space-between;
